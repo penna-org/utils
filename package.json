@@ -32,7 +32,8 @@
     "dev": "tsup --watch",
     "build": "tsup",
     "lint": "eslint src --fix",
-    "release": "bummp && npm publish"
+    "release": "bummp && pnpm publish",
+    "prepublish": "pnpm build"
   },
   "publishConfig": {
     "access": "public"
