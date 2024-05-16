@@ -38,9 +38,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "@types/lodash-es": "^4.17.12"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.18.0",
-    "@types/lodash-es": "^4.17.12",
     "bummp": "^0.2.0",
     "eslint": "^8.57.0",
     "lodash-es": "^4.17.21",
