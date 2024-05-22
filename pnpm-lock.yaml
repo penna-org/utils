@@ -15,9 +15,6 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.18.0
         version: 2.18.0(@vue/compiler-sfc@3.4.27)(eslint@8.57.0)(typescript@5.4.5)(vitest@1.6.0)
-      bummp:
-        specifier: ^0.2.0
-        version: 0.2.0
       bumpp:
         specifier: ^9.4.1
         version: 9.4.1
@@ -814,11 +811,6 @@ packages:
     resolution: {integrity: sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==}
     engines: {node: '>=6'}
 
-  bummp@0.2.0:
-    resolution: {integrity: sha512-1r7ar8ciqsxquxBZtfuxwF4Kgri19OXvcuTRHg1yoikgXNBPzhhF8CGowpDhM7WeArjVbhFZX7DaDPGFpxvnqQ==}
-    engines: {node: '>=v18.0.0', npm: '>=9.0.0'}
-    hasBin: true
-
   bumpp@9.4.1:
     resolution: {integrity: sha512-kzhp/LpNX0HkUpEyLd7sU2LTN/mbAVgcxJ1Zi2cAJTE/tul6rypSKGpH8UywDpzKWItL8LVdKsIFnwmylw0+7g==}
     engines: {node: '>=10'}
@@ -906,9 +898,6 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
-
-  colorate@0.1.4:
-    resolution: {integrity: sha512-8cWT9ejVDYL8A+sYsuCVc3Vko6+HF/sPYmmHmDISZaIPX1qE8ACQryh5QxbRSw/2obnU3RYe2LgADohlYQbDrg==}
 
   commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
@@ -1639,10 +1628,6 @@ packages:
 
   mlly@1.7.0:
     resolution: {integrity: sha512-U9SDaXGEREBYQgfejV97coK0UL1r+qnF2SyO9A3qcI8MzKnsIFKHNVEkrDyNncQTKQQumsasmeq84eNMdBfsNQ==}
-
-  mri@1.2.0:
-    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
-    engines: {node: '>=4'}
 
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
@@ -3010,13 +2995,6 @@ snapshots:
 
   builtin-modules@3.3.0: {}
 
-  bummp@0.2.0:
-    dependencies:
-      colorate: 0.1.4
-      mri: 1.2.0
-      prompts: 2.4.2
-      semver: 7.6.2
-
   bumpp@9.4.1:
     dependencies:
       '@jsdevtools/ez-spawn': 3.0.4
@@ -3128,8 +3106,6 @@ snapshots:
   color-name@1.1.3: {}
 
   color-name@1.1.4: {}
-
-  colorate@0.1.4: {}
 
   commander@4.1.1: {}
 
@@ -3947,8 +3923,6 @@ snapshots:
       pathe: 1.1.2
       pkg-types: 1.1.1
       ufo: 1.5.3
-
-  mri@1.2.0: {}
 
   ms@2.1.2: {}
 
