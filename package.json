@@ -1,7 +1,7 @@
 {
   "name": "@pennajs/utils",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4-beta.1",
   "packageManager": "pnpm@9.1.2",
   "author": {
     "email": "aibayanyu@qq.com",
@@ -34,22 +34,46 @@
       "default": "./dist/dom/*.js"
     },
     "./vue/*": {
-        "types": "./dist/vue/*.d.ts",
-        "import": "./dist/vue/*.js",
-        "require": "./dist/vue/*.cjs",
-        "default": "./dist/vue/*.js"
+      "types": "./dist/vue/*.d.ts",
+      "import": "./dist/vue/*.js",
+      "require": "./dist/vue/*.cjs",
+      "default": "./dist/vue/*.js"
     },
     "./*": {
-        "types": ["./dist/*.d.ts","./dist/*/*.d.ts"],
-        "import": ["./dist/*.js","./dist/*/*.js"],
-        "require": ["./dist/*.cjs","./dist/*/*.cjs"],
-        "default": ["./dist/*.js","./dist/*/*.js"]
+      "types": [
+        "./dist/*.d.ts",
+        "./dist/*/*.d.ts"
+      ],
+      "import": [
+        "./dist/*.js",
+        "./dist/*/*.js"
+      ],
+      "require": [
+        "./dist/*.cjs",
+        "./dist/*/*.cjs"
+      ],
+      "default": [
+        "./dist/*.js",
+        "./dist/*/*.js"
+      ]
     },
     "./dist/*": {
-        "types": ["./dist/*.d.ts","./dist/*/*.d.ts"],
-        "import": ["./dist/*.js","./dist/*/*.js"],
-        "require": ["./dist/*.cjs","./dist/*/*.cjs"],
-        "default": ["./dist/*.js","./dist/*/*.js"]
+      "types": [
+        "./dist/*.d.ts",
+        "./dist/*/*.d.ts"
+      ],
+      "import": [
+        "./dist/*.js",
+        "./dist/*/*.js"
+      ],
+      "require": [
+        "./dist/*.cjs",
+        "./dist/*/*.cjs"
+      ],
+      "default": [
+        "./dist/*.js",
+        "./dist/*/*.js"
+      ]
     },
     "./package.json": "./package.json"
   },
