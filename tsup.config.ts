@@ -6,6 +6,9 @@ export default defineConfig({
   entry: [
     'src/**/*.ts',
   ],
+  external: [
+    'vue',
+  ],
   dts: true,
   clean: true,
   format: ['esm', 'cjs'],
