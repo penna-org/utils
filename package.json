@@ -1,7 +1,7 @@
 {
   "name": "@pennajs/utils",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4-beta.1",
   "packageManager": "pnpm@9.1.1",
   "author": {
     "email": "aibayanyu@qq.com",
@@ -38,6 +38,12 @@
         "import": "./dist/vue/*.js",
         "require": "./dist/vue/*.cjs",
         "default": "./dist/vue/*.js"
+    },
+    "./*": {
+        "types": ["./dist/*.d.ts","./dist/*/*.d.ts"],
+        "import": ["./dist/*.js","./dist/*/*.js"],
+        "require": ["./dist/*.cjs","./dist/*/*.cjs"],
+        "default": ["./dist/*.js","./dist/*/*.js"]
     },
     "./dist/*": {
         "types": ["./dist/*.d.ts","./dist/*/*.d.ts"],
