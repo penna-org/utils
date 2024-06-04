@@ -14,6 +14,39 @@
     "penna",
     "vue"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./lodash": {
+      "types": "./dist/lodash.d.ts",
+      "import": "./dist/lodash.js",
+      "require": "./dist/lodash.cjs",
+      "default": "./dist/lodash.js"
+    },
+    "./dom/*": {
+      "types": "./dist/dom/*.d.ts",
+      "import": "./dist/dom/*.js",
+      "require": "./dist/dom/*.cjs",
+      "default": "./dist/dom/*.js"
+    },
+    "./vue/*": {
+        "types": "./dist/vue/*.d.ts",
+        "import": "./dist/vue/*.js",
+        "require": "./dist/vue/*.cjs",
+        "default": "./dist/vue/*.js"
+    },
+    "./dist/*": {
+        "types": ["./dist/*.d.ts","./dist/*/*.d.ts"],
+        "import": ["./dist/*.js","./dist/*/*.js"],
+        "require": ["./dist/*.cjs","./dist/*/*.cjs"],
+        "default": ["./dist/*.js","./dist/*/*.js"]
+    },
+    "./package.json": "./package.json"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
