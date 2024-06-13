@@ -49,6 +49,6 @@ export const tupleArr = <T extends string[]>(...args: T) => args
 
 export const tupleNumArr = <T extends number[]>(...args: T) => args
 
-export function toArray<T>(val: T): T[] {
-  return isArray(val) ? val : [val]
+export function toArray<T>(val: T): T extends any[] ? T : T[] {
+  return (isArray(val) ? val : [val]) as T extends any[] ? T : T[]
 }
